@@ -172,8 +172,61 @@ html {
     }
 
 }
-
-
+.search-for-room {
+    display: flex;
+    background-image: url("../imgs/search-bg.png");
+    
+    border-radius: 10px;
+}
+.container-search {
+    
+    margin: 0 150;
+    padding: 0 5px;
+    display: block;
+}
+.cheek {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    
+    padding: 10px 150px;
+}
+.date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #081F32;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 30px;
+}
+.button-find {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    flex: none;
+    margin: 15px 30px;
+    background: #1B75BB;
+    border-radius: 5px;
+    display: inline-block
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 30px;
+    
 /* HOLIAYS */
 .holidays {}
 
@@ -197,7 +250,7 @@ html {
     position: absolute;
     top: -50px;
     right: -60px;
-    max-width: 484px;
+    
 }
 
 .holidays-img-ripples {
