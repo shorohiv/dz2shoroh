@@ -115,7 +115,7 @@ html {
     width: auto;
     padding: 22rem 0 0;
 }
-.container1 {
+.first-section .container {
     display: block;
     margin-left: 135px;
 }
@@ -173,42 +173,62 @@ html {
 
 }
 .search-for-room {
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(70px);
     display: flex;
-    background-image: url("../imgs/search-bg.png");
-    
-    border-radius: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 687px;
+    position: absolute;
+    left: 5rem;
 }
-.container-search {
+.blur {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
     
-    margin: 0 150;
-    padding: 0 5px;
-    display: block;
 }
-.cheek {
+.blur-item {
+    position: relative;
+    padding: 2rem 1rem;
+    margin: 1rem 2rem;
+    
+    
+}
+.blur-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    width: 2px;
+    height: 34px;
+    background-color: #9DACB8;
+}
+.blur-item:first-child::before {
+    display: none;
+}
+
+.search-for-room .container {
+    position: relative;
+    
+}
+.blur-item-title {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    list-style: none;
     
-    padding: 10px 150px;
 }
-.date {
+
+.blur-item-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    color: #081F32;
     opacity: 0.8;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0 30px;
-}
+    display: inline-block;
+} 
 .button-find {
     font-family: Roboto;
     font-style: normal;
@@ -221,12 +241,11 @@ html {
     margin: 15px 30px;
     background: #1B75BB;
     border-radius: 5px;
-    display: inline-block
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-end;
     padding: 15px 30px;
-    
+    position: relative;
+    left: 5rem;
+}
+   
 /* HOLIAYS */
 .holidays {}
 
@@ -244,12 +263,16 @@ html {
 .holidays-img-main {
     position: relative;
     z-index: 1;
+    border-radius: 10px;
+    
 }
 
 .holidays-img-sec {
     position: absolute;
     top: -50px;
     right: -60px;
+    opacity: 0.5;
+    border-radius: 10px;
     
 }
 
@@ -257,6 +280,7 @@ html {
     position: absolute;
     left: -30px;
     bottom: -30px;
+    mix-blend-mode: darken;
 }
 
 .holidays-content {
