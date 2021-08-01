@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Gelasio', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #081F32;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header-row {
+    font-size: 1.6rem;
+    font-family: Gelasio;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.logo {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 135px;
+    }
+   
+.logo-img {
+    position: relative;
+    top: 10px;
+    right: 230px;
+    z-index: 1;
+    }
+    
+.logo-text {
+    position: absolute;
+    top: 60px;
+    right: 190px;
+    }
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 100px;
+}
+.nav-item {
+    align-items: center;
+    margin: 0 40px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    float: left;
+    right: 180px;
+}
+.nav-link {
+    color: #1B75BB;
+    text-decoration: none;
+}
+.book {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    flex: none;
+    margin: 0px 10px;
+    background: #1B75BB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 30px;
+}
+
+/* FIRST SECTION */
+.content-name {
+    color: #1B75BB;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+.first-section {
+    background-image: url("../imgs/main-bg.jpg");
+    background-position: center;
+    position: relative;
+    min-height: 690px;
+    width: auto;
+    padding: 22rem 0 0;
+}
+.container1 {
+    display: block;
+    margin-left: 135px;
+}
+
+.first-section-title {
+    font-size: 5.7rem;
+    max-width: 45rem;
+    margin: 0 0 2rem;
+    
+}
+
+.first-section-text {
+    font-size: 1.8rem;
+    max-width: 34rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.6;
+    display: block;
+    margin: 0 0 2rem;
+}
+.button-more {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    flex: none;
+    margin: 15px 30px;
+    background: #1B75BB;
+    border-radius: 5px;
+    display: inline-block
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 30px;
+    margin-left: 135px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .first-section-title {
+        font-size: 4.7rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .first-section-title {
+        font-size: 2.7rem;
+    }
+
+}
+
+
+/* HOLIAYS */
+.holidays {}
+
+.holidays-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.holidays-imgs {
+    position: relative;
+    margin-top: 150px;
+}
+
+.holidays-img-main {
+    position: relative;
+    z-index: 1;
+}
+
+.holidays-img-sec {
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    max-width: 484px;
+}
+
+.holidays-img-ripples {
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+}
+
+.holidays-content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #1B75BB;
+    text-transform: uppercase;
+    padding-left: 135px;
+
+}
+
+.holidays-title {
+    font-family: Gelasio;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: black;
+    text-transform: capitalize;
+}
